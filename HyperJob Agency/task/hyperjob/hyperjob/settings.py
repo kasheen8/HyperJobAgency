@@ -56,7 +56,7 @@ ROOT_URLCONF = 'hyperjob.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:\\Users\kashe\Desktop\HyperJob Agency\HyperJob Agency\\task\hyperjob\hyperjob\\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
