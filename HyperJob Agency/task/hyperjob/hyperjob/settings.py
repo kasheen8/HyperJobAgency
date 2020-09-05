@@ -53,10 +53,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'hyperjob.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\\Users\kashe\Desktop\HyperJob Agency\HyperJob Agency\\task\hyperjob\hyperjob\\templates'],
+        'DIRS': [BASE_DIR + '\\hyperjob\\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -99,6 +100,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login'
 
 
 # Internationalization
