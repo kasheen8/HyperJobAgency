@@ -10,7 +10,10 @@ urlpatterns = [
     path('resumes/', include('resume.urls')),
     path('login', views.MyLoginView.as_view()),
     path('signup', views.MySignupView.as_view()),
-    path('home/', views.MainPageView.as_view()),
     path('login/', RedirectView.as_view(url='/login')),
     path('signup/', RedirectView.as_view(url='/signup')),
+    path('home', RedirectView.as_view(url='home/')),
+    path('home/', views.HomePageView.as_view()),
+    path('vacancy/new', views.NewVacancyView.as_view()),
+    path('resume/new', views.NewResumeView.as_view()),
 ]
